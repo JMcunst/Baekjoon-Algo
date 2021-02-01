@@ -8,7 +8,6 @@ int main() {
 	cin.tie(0);
 
 	int numberOfCard;
-	int lastOfCard = 0;
 	queue<int> que;
 
 	cin >> numberOfCard;
@@ -19,17 +18,11 @@ int main() {
 
 	while (que.size() > 1) {
 		que.pop();
-		if (que.size() == 1) {
-			lastOfCard = que.front();
-			break;
-		}
-		int topOfCard;
-		topOfCard = que.front();
-		que.push(topOfCard);
+		que.push(que.front());
 		que.pop();
 	}
 
-	cout << lastOfCard;
+	cout << que.front();
 
 	return 0;
 }
