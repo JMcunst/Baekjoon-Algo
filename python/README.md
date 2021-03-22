@@ -1,5 +1,5 @@
-## 리스트 자료형 시간복잡도
-||Operation|Example|Class|Note|
+## 리스트(list) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
 |---|---|---|---|---|
 |1|Index|I[i]|O(1)|인덱스로 값 찾기|
 |2|Store|I[i]=0|O(1)|인덱스로 데이터 저장|
@@ -22,3 +22,23 @@
 |19|Iteration|for v in I:|O(N)|전체 데이터 확인하므로|
 |20|Sort|I.sort()|O(N Log N)|파이썬 기본 정렬 알고리즘|
 |21|Multiply|k*I|O(k N)|리스트의 곱은 리스트 개수 늘어남|
+
+## 집합(set) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
+|---|---|---|---|---|
+|1|Add|s.add(4)|O(1)|집합 요소 추가|
+|2|Containment|x in/not in s|O(1)|포함 여부 확인|
+|3|Remove|s.remove(...)|O(1)|요소 제거|
+|4|Discard|s.discard(...)|O(1)|특정 요소 제거|
+|5|Pop|s.pop()|O(1)|랜덤하게 하나 pop|
+|6|Clear|s.clear()|O(1)|similar to s = set()|
+|7|Construction|set(...)|O(len(...))|길이만큼|
+|8|check ==,i=|s!=t|O(len(s))|전체 요소 동일 여부 확인|
+|9|<=/<|s<=t|O(len(s))|부분집합 여부|
+|10|>=/>|s>=t|O(len(t))|부분집합 여부|
+|11|Union|s,t|O(len(s)+len(t))|합집합|
+|12|Intersction|s&t|O(len(s)+len(t))|교집합|
+|13|Difference|s-t|O(len(s)+len(t))|차집합|
+|14|Symmetric Diff|s^t|O(len(s)+len(t))|여집합|
+|15|Interation|for v in s:|O(N)|전체 요소 순회|
+|16|Copy|s.copy()|O(N)|복제|
