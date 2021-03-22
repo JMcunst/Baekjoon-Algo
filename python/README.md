@@ -42,3 +42,17 @@
 |14|Symmetric Diff|s^t|O(len(s)+len(t))|여집합|
 |15|Interation|for v in s:|O(N)|전체 요소 순회|
 |16|Copy|s.copy()|O(N)|복제|
+
+## 딕셔너리(dictionary) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
+|---|---|---|---|---|
+|1|Store|d[k]=v|O(1)|데이터 저장|
+|2|Length|len(d)|O(1)|길이 출력|
+|3|Delete|del d[k]|O(1)|요소 제거|
+|4|get/setdefault|d.get(k)|O(1)|key에 따른 value 확인|
+|5|Pop|d.pop(k)|O(1)|pop|
+|6|Pop item|d.popitem()|O(1)|랜덤하게 선택해서 pop|
+|7|Clear|d.clear()|O(1)|similar to s={} or =dcit()|
+|8|View|d.keys()|O(1)|same for d.values()/키값 전체 확인|
+|9|Construction|dict(...)|O(len(...))|(key,value)튜플 개수만큼|
+|10|Iteration|for k in d:|O(N)|전체 딕셔너리 순회|
