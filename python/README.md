@@ -1,0 +1,58 @@
+## 리스트(list) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
+|---|---|---|---|---|
+|1|Index|I[i]|O(1)|인덱스로 값 찾기|
+|2|Store|I[i]=0|O(1)|인덱스로 데이터 저장|
+|3|Length|len(I)|O(1)|리스트 길이|
+|4|Append|I.append(5)|O(1)|리스트 뒤에 데이터 저장|
+|5|Pop|I.pop()|O(1)|가장 뒤의 데이터 pop|
+|6|Clear|I.clear()|O(1)|I=[]|
+|7|Slice|I[a:b]|O(b-a)|슬라이싱되는 요소들 수 만큼 비례|
+|8|Extend|I.extend(...)|O(len(...))|확장되는 길이만큼|
+|9|Construction|list(...)|O(len(...))|리스트 길이만큼|
+|10|check==,i=|I1==I2|O(N)|전체 리스트가 동일한지 확인|
+|11|Insert|I[a:b]=...|O(N)|데이터 삽입|
+|12|Delete|del[i]|O(N)|데이터 삭제|
+|13|Containment|x in/not in I|O(N)|포함 여부 확인|
+|14|Copy|I.copy()|O(N)|복제|
+|15|Remove|I.remove(...)|O(N)|제거|
+|16|Pop|I.pop()|O(N)|제거된 값 이후를 전부 한칸씩 당겨줘야함|
+|17|Extreme value|min(I)/max(I)|O(N)|전체 데이터를 확인해야함|
+|18|Reverse|I.reverse()|O(N)|뒤집기|
+|19|Iteration|for v in I:|O(N)|전체 데이터 확인하므로|
+|20|Sort|I.sort()|O(N Log N)|파이썬 기본 정렬 알고리즘|
+|21|Multiply|k*I|O(k N)|리스트의 곱은 리스트 개수 늘어남|
+
+## 집합(set) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
+|---|---|---|---|---|
+|1|Add|s.add(4)|O(1)|집합 요소 추가|
+|2|Containment|x in/not in s|O(1)|포함 여부 확인|
+|3|Remove|s.remove(...)|O(1)|요소 제거|
+|4|Discard|s.discard(...)|O(1)|특정 요소 제거|
+|5|Pop|s.pop()|O(1)|랜덤하게 하나 pop|
+|6|Clear|s.clear()|O(1)|similar to s = set()|
+|7|Construction|set(...)|O(len(...))|길이만큼|
+|8|check ==,i=|s!=t|O(len(s))|전체 요소 동일 여부 확인|
+|9|<=/<|s<=t|O(len(s))|부분집합 여부|
+|10|>=/>|s>=t|O(len(t))|부분집합 여부|
+|11|Union|s,t|O(len(s)+len(t))|합집합|
+|12|Intersction|s&t|O(len(s)+len(t))|교집합|
+|13|Difference|s-t|O(len(s)+len(t))|차집합|
+|14|Symmetric Diff|s^t|O(len(s)+len(t))|여집합|
+|15|Interation|for v in s:|O(N)|전체 요소 순회|
+|16|Copy|s.copy()|O(N)|복제|
+
+## 딕셔너리(dictionary) 자료형 시간복잡도
+||**Operation**|**Example**|**Class**|**Note**|
+|---|---|---|---|---|
+|1|Store|d[k]=v|O(1)|데이터 저장|
+|2|Length|len(d)|O(1)|길이 출력|
+|3|Delete|del d[k]|O(1)|요소 제거|
+|4|get/setdefault|d.get(k)|O(1)|key에 따른 value 확인|
+|5|Pop|d.pop(k)|O(1)|pop|
+|6|Pop item|d.popitem()|O(1)|랜덤하게 선택해서 pop|
+|7|Clear|d.clear()|O(1)|similar to s={} or =dcit()|
+|8|View|d.keys()|O(1)|same for d.values()/키값 전체 확인|
+|9|Construction|dict(...)|O(len(...))|(key,value)튜플 개수만큼|
+|10|Iteration|for k in d:|O(N)|전체 딕셔너리 순회|
