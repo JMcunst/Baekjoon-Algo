@@ -64,13 +64,14 @@ PUSH	STA	@STACKPTR	.레지스터A값 STACKPTR의 주소값이 가리키는 곳�
 	LDA	STACKPTR	.STACKPTR 주소값 로드.
 	ADD	#3		.STACKPTR 주소값 + 3, WORD는 주소크기가 3이다.
 	STA	STACKPTR	.주소 STACKPTR 저장.
+	RSUB			.서브루틴 끝. 돌아감.
 
 POP	LDA	STACKPTR	.STACKPTR 주소값 로드
 	SUB	#3		.STACKPTR 주소값 - 3
 	STA	STACKPTR	.STACKPTR에 저장.
 	LDA	@STACKPTR	.STACKPTR 주소값이 참조하는 값 로드.
 	RSUB			.서브루틴 끝. 돌아감.
-	
+
 FIN
 	END	FIRST
 
