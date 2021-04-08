@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int cmp(int a, int b) { // 내림차순
+int cmp(int a, int b) { // 내림차순, greedy algorithm
 	return a > b;
 }
 int main() {
