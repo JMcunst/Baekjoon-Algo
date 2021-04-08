@@ -10,9 +10,8 @@ for i in range(n):
 for i in range(n - 1, -1, -1): #range(시작,종료,얼만큼)
     if k == 0:
         break
-    if m[i] > k:
-        continue
-    num += k // m[i]
-    k %= m[i]
+                        # 4200//50000 4200//10000 4200//5000 4200//1000 200//500 200//100 
+    num += k // m[i]    #    0           0           0          4          4         6
+    k %= m[i]           #    4200        4200        4200       200        200       0
 
 print(num)
