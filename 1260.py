@@ -1,3 +1,5 @@
+from sys import stdin
+
 def dfs(V):
     print(V, end=' ')               # 방문한 노드 출력
     list_visit[V] = 1               # 방문한 노드 1체크(나 방문했다!)
@@ -17,12 +19,12 @@ def bfs(V):
                 queue.append(i)
                 list_visit[i] = 0
 
-var_N, var_M, var_V = map(int, input().split())
+var_N, var_M, var_V = map(int, stdin.readline().split())
 inj_matrix = [[0] * (var_N + 1) for i in range(var_N + 1)]  # 인접행렬 생성 (var_N +1 사이즈 만큼 행과 열)
 list_visit = [0 for i in range(var_N + 1)]                  # 방문 정보 리스트 생성 (var_N +1 사이즈 만큼)
 
 for i in range(var_M):  # 인접행렬 세팅   
-    x, y = map(int, input().split())    # 0 1 1 0 
+    x, y = map(int, stdin.readline().split())    # 0 1 1 0 
     inj_matrix[x][y] = 1                # 1 0 0 1
     inj_matrix[y][x] = 1                # 1 0 0 1
                                         # 0 1 1 0
