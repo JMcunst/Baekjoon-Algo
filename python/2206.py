@@ -1,6 +1,6 @@
 from sys import stdin
 from collections import deque
-import pprint
+#import pprint
 
 dx=[-1,0,1,0] # 좌 우 
 dy=[0,1,0,-1] # 위 아래
