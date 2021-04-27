@@ -30,7 +30,6 @@ mat_visit = [[[-1]*2 for _ in range(var_M)] for _ in range(var_N)]
 queue = deque()
 #pprint.pprint(mat_visit)
 bfs()
-print(mat_visit[0][2][0], mat_visit[0][2][1])
 #pprint.pprint(mat_visit)
 var_rtn_1, var_rtn_2 = mat_visit[var_N-1][var_M-1][0], mat_visit[var_N-1][var_M-1][1]
 if var_rtn_1 == -1 and var_rtn_2 != -1:
