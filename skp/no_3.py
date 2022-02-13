@@ -22,7 +22,6 @@ class Friend:
         visit_queue = [self]
         is_friend = False
 
-        print(visit_queue)
         def dfs(self, friend, visit_queue, is_friend):
             stack = [self]
             while stack:
@@ -34,10 +33,8 @@ class Friend:
                         is_friend = True
                     dfs(j,friend,visit_queue, is_friend)
 
-
         heapq.heapify(visit_queue)
 
-        # print(self.friends)
         return is_friend
     
 
