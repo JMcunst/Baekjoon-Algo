@@ -34,6 +34,8 @@ for _ in range(var_T):
             if not bfs(i):
                 bool_isBG = False
                 break
+
 # mat_table : [[], [3], [3], [1, 2]]  |  [[], [2], [1, 3, 4], [2, 4], [3, 2]]
 # mat_visit : [0, 1, 1, -1]           |  [0, 1, -1, 1, 1]
+
     print("YES"if bool_isBG else "NO")
