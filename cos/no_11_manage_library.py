@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 1번
 from abc import *
 
 class Book(metaclass=ABCMeta):
