@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 3번
+
 def func_a(n):
 	ret = 1
 	while n > 0:
