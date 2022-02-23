@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 3차 3번
 
 def solution(bishops):
 	answer = 0
