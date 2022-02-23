@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 5번
 
 def solution(arr):
     answer = 0
