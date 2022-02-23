@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
-# 2차 10번
+# 2차 10번 function
 
 def solution(s):
 	s += '#'
