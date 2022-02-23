@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 3차 2번
+
 def func_a(arr, s):
 	return s in arr
 
