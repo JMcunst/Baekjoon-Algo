@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 8번
 
 def solution(arr):
 	left, right = 0, len(arr) - 1
