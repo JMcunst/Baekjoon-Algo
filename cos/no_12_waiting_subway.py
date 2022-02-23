@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 2번
+
 def func_a(times):
 	hour = int(times[:2])
 	minute = int(times[3:])
