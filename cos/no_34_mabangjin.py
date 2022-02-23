@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 4차 4번
 
 def func_a(matrix):
 	n = 4
