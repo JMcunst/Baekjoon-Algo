@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 4차 3번
 
 def solution(one_day_price, multi_day, multi_day_price, n):
 	if one_day_price * multi_day <= multi_day_price:
