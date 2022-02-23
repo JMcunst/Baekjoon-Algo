@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 3차 4번
 
 def solution(s1, s2):
 	answer = 0
