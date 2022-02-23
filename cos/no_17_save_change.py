@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 2차 7번
+
 def solution(money):
 	coin = [10, 50, 100, 500, 1000, 5000, 10000, 50000]
 	counter = 0
