@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
+# 3차 1번
+
 def func_a(arr):
 	ret = arr + arr
 	return ret
@@ -30,7 +32,7 @@ def solution(arrA, arrB):
 		if func_c(arrA_temp, arrB):
 			return True
 	return False
-    
+
 arrA1 = [1, 2, 3, 4]
 arrB1 = [3, 4, 1, 2]
 ret1 = solution(arrA1, arrB1)
