@@ -10,7 +10,7 @@ def solution(number, target):
 		dp[i*2] = dp[i] + 1
 		
 	dp[number+1] = 1
-	min_num = 0
+
 	for i in range(number+2, target+1):
 		min_num = min(dp[i-1]+1, dp[i//2]+1) if (i % 2 == 0) and (i//2 >= number) else dp[i-1]+1
 			
