@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
-            
+#DP 2*n+1 타일링
+
 def solution(number, target):
 	
     dp = [-1]*(2*target+1)
