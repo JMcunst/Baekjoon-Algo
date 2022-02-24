@@ -21,7 +21,6 @@ def bfs(n, garden):
 					queue.append([nx, ny])
 
 def solution(n, garden):
-	answer = 0
 	var_rtn  = -2
 	
 	for i in range(n):
@@ -31,11 +30,8 @@ def solution(n, garden):
 
 	bfs(n, garden)
 	
-	bool_cant = False
 	for i in garden:
 		for j in i:
-			if j == 0:
-				bool_cant = True
 			var_rtn = max(var_rtn, j)
 			
 	if var_rtn == -1:
