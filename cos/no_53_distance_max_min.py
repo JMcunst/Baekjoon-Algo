@@ -4,7 +4,7 @@ import itertools
 
 def solution(arr, K):
 	answer = 10001
-	list_a = list(itertools.combinations(arr, 4))
+	list_a = list(itertools.combinations(arr, K))
 	
 	for nums in list_a:
 		list_nums = list(set(nums))
