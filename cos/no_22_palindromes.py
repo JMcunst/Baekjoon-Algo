@@ -24,7 +24,9 @@ def solution(s, k):
 	length = len(s)
 	for start_idx in range(length):
 		for cnt in range(1, length - start_idx + 1):
+			print(start_idx ,cnt, start_idx + cnt)
 			sub_s = s[start_idx : start_idx + cnt]
+			print(sub_s)
 			if func_b(sub_s) == True:
 				if func_a(palindromes, sub_s) == False:
 					palindromes.append(sub_s)
