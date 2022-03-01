@@ -6,6 +6,7 @@ def solution(grid):
 	for i in range(4):
 		for j in range(4):
 			for k in range(j + 1, 4, 2):
+				print('i:',i, ' j:',j, ' k:',k)
 				answer = max(answer, max(grid[i][j] + grid[j][k], grid[i][j] + grid[k][i]))
 	return answer
 
