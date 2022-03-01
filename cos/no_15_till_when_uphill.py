@@ -16,6 +16,10 @@ def solution(arr):
 
     answer = max(tmp)+1
 
+    print(arr)
+    print(tmp)
+    print(answer)
+
     if answer < 2:
         return 1
         
