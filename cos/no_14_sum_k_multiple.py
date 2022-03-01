@@ -8,6 +8,7 @@ def solution(arr, K):
 	for i in range(len(arr)-2):
 		for j in range(i+1, len(arr)-1):
 			for k in range(j+1, len(arr)):
+				print('i:',i, '   j:', j,'   k:', k)
 				if (arr[i]+arr[j]+arr[k])%K == 0:
 					answer += 1
 	
