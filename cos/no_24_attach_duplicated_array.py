@@ -3,17 +3,18 @@
 # 3차 4번
 
 def solution(s1, s2):
+	print(s1[:2:-1])
+	print('-------------')
 	answer = 0
 	
 	for i in range(len(s1)):
+		print(s1[0:i], '===', s2[-i:])
 		if s1[0:i] == s2[-i:]:
-			print(s1[0:i])
 			answer = i
 			break
 			
 	for i in range(len(s2)):
 		if s2[0:i] == s1[-i:]:
-			print(s2[0:i])
 			if answer < i:
 				answer = i
 				break
