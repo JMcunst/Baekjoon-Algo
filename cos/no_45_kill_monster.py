@@ -14,6 +14,7 @@ def solution(enemies, armies):
 			if i >= j:
 				n += 1
 				answer = max(n, answer)
+				print('아군i:',i,'적군j:',j, 'n:',n,'answer:', answer)
 	
 	return answer
 
