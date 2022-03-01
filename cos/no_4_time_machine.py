@@ -4,9 +4,11 @@
 def solution(num):
 	answer = num + 1
 	digit = 1
+	print(answer)
 	while answer // digit % 10 == 0:
 		answer += digit
 		digit *= 10
+		print(answer)
 	return answer
 
 num = 9949999;
