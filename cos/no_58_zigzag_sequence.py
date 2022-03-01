@@ -34,7 +34,9 @@ def func_c(arr):
 
 def solution(S):
 	check = func_b(S)
+	print(check)
 	dp = func_a(check)
+	print(dp)
 	answer = func_c(dp)
 	return answer
 
