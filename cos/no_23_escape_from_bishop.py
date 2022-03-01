@@ -14,7 +14,7 @@ def solution(bishops):
 		y = int(bis[1])-1
 		field[x][y] = 1
 		
-		for dx, dy in dxy:
+		for dx, dy in dxy: # 4번 간다.
 			nx , ny = x, y
 			
 			while True:
