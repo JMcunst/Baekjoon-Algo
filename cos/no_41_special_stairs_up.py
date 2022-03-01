@@ -8,15 +8,16 @@ def solution(n):
 	steps[3] = 4
 	for i in range(4, n+1):
 		steps[i] = steps[i-1] + steps[i-2] + steps[i-3]
+	print(steps)
 	answer = steps[n]
 	return answer
 
-n1 = 3
+n1 = 5
 ret1 = solution(n1)
 
 print("solution 함수의 반환 값은", ret1, "입니다.")
 
-n2 = 4
+n2 = 6
 ret2 = solution(n2)
 
 print("solution 함수의 반환 값은", ret2, "입니다.")
