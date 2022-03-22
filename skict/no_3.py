@@ -39,3 +39,4 @@ def solution(width, height, diagonals):
     return answer
 
 solution(2,2, [[1,1],[2,2]])
+
