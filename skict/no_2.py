@@ -1,6 +1,5 @@
 # 2번 문제
 # 소용돌이수 4개가 시계 방향, 반시계 방향으로 중앙으로 들어감.
-
 import math
 
 def solution(n, clockwise):
