@@ -1,6 +1,5 @@
 # 1번 문제
 # 원가 대비 가격에 대한 그리디
-
 from collections import Counter
 
 
