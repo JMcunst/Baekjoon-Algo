@@ -6,9 +6,11 @@ def solution(num):
 	digit = 1
 	print(answer)
 	while answer // digit % 10 == 0:
+		tmp = answer // digit
+		print('Condition:',tmp, digit)
 		answer += digit
 		digit *= 10
-		print(answer)
+		print('Middle_Answer:',answer)
 	return answer
 
 num = 9949999;

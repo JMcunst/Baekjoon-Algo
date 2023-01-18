@@ -7,6 +7,7 @@ def solution(k, student):
 		s -= 4*k
 		if s <= 0:
 			continue
+		print('S:',s,'K:',k, 's+k-1:',(s+k-1))
 		answer += (s + k - 1) // k
 	return answer
 

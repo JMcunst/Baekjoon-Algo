@@ -3,12 +3,15 @@
 # 4차 4번
 
 def func_a(matrix):
+	print('MATRIX:',matrix)
 	n = 4
 	ret = []
 	exist = [False for _ in range(n*n + 1)]
 	for i in range(0, n):
 		for j in range(0, n):
+			print('I:', i, ' J:',j)
 			exist[matrix[i][j]] = True
+	print('EXIST:',exist)
 	for i in range(1, n*n+1):
 		if exist[i] == False:
 			ret.append(i)
@@ -47,7 +50,9 @@ def func_c(matrix):
 def solution(matrix):
 	answer = []
 	coords = func_b(matrix)
+	print('CORD:',coords)
 	nums = func_a(matrix)
+	print('NUMS:',nums)
 
 	matrix[coords[0][0]][coords[0][1]] = nums[0]
 	matrix[coords[1][0]][coords[1][1]] = nums[1]

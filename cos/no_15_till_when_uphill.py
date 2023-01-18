@@ -3,22 +3,22 @@
 # 2차 5번
 
 def solution(arr):
+    print('ARR:',arr)
     answer = 0
     idx = 0
 
     tmp = [0 for i in range(len(arr)-1)]
+    print('TMP:',tmp)
 
     for i in range(len(arr)-1):
         if arr[i] < arr[i+1]:
             tmp[idx] += 1
         else:
             idx += 1
+        print('TMP::',tmp)
 
     answer = max(tmp)+1
-
-    print(arr)
-    print(tmp)
-    print(answer)
+    print('ANSWER:',answer)
 
     if answer < 2:
         return 1

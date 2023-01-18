@@ -6,6 +6,7 @@ def solution(prices):
 	tmp = INF
 	answer = -INF
 	for price in prices:
+		print(answer, price, tmp, price-tmp)
 		if tmp != INF:
 			answer = max(answer, price - tmp)
 		tmp = min(tmp, price)

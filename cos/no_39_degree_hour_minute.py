@@ -5,6 +5,7 @@ def solution(hour, minute):
 
 	answer = 30*hour-5.5*minute # 공식: 30*(시침)-5.5*(분침)
 
+	print(answer, type(answer))
 	return "{:.1f}".format(answer)
 
 hour = 3

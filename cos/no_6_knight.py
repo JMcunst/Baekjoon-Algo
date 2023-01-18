@@ -9,6 +9,7 @@ def solution(pos):
     answer = 0
     start_row = int(pos[1])
     start_col = ord(pos[0])-65
+    print(start_row, start_col)
 
     for i in range(var_N):
         now_row = start_row + dx[i]

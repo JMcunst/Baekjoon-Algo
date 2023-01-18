@@ -28,6 +28,7 @@ def solution(num):
 	while True:
 		next_num += 1
 		length = func_b(next_num)
+		print('NUM:',next_num,'LENGTH:',length)
 		if length % 2:
 			continue
 		divisor = func_a(length//2)  
@@ -45,7 +46,7 @@ ret1 = solution(num1)
 
 print("solution 함수의 반환 값은", ret1, "입니다.")
 
-num2 = 235386
-ret2 = solution(num2)
+# num2 = 235386
+# ret2 = solution(num2)
 
-print("solution 함수의 반환 값은", ret2, "입니다.")
+# print("solution 함수의 반환 값은", ret2, "입니다.")

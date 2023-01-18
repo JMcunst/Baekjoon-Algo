@@ -3,6 +3,7 @@
 # 3차 4번
 
 def solution(s1, s2):
+	print(s1)
 	print(s1[:2:-1])
 	print('-------------')
 	answer = 0
@@ -12,8 +13,9 @@ def solution(s1, s2):
 		if s1[0:i] == s2[-i:]:
 			answer = i
 			break
-			
+	print('<<<>>>')
 	for i in range(len(s2)):
+		print(s2[0:i], '===', s1[-i:])
 		if s2[0:i] == s1[-i:]:
 			if answer < i:
 				answer = i

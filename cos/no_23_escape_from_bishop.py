@@ -7,7 +7,7 @@ def solution(bishops):
 	
 	dxy = [[1,1],[1,-1],[-1,1],[-1,-1]]
 	
-	field = [[0] * 8 for i in range(8)]
+	field = [[0] * 8 for _ in range(8)]
 	
 	for bis in bishops:
 		x = ord(bis[0])-65
@@ -16,7 +16,7 @@ def solution(bishops):
 		
 		for dx, dy in dxy: # 4번 간다.
 			nx , ny = x, y
-			
+
 			while True:
 				nx += dx
 				ny += dy

@@ -10,6 +10,7 @@ def func_b(first, second):
 	MAX_NUMBER = 1001
 	counter = [0 for _ in range(MAX_NUMBER)]
 	for f, s in zip(first, second):
+		print('FIRST:',f,'SECOND:',s)
 		counter[f] += 1
 		counter[s] -= 1
 	for c in counter:
