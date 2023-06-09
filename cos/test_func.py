@@ -1,4 +1,24 @@
 import itertools
+import string
+from collections import deque 
+import math
+
+tmp = string.digits+string.ascii_lowercase
+
+def convert(num, base):
+	print('NUM:',num, ' BASE:',base)
+	q, r = divmod(num, base)
+	if q == 0:
+		return tmp[r]
+	else:
+		return convert(q,base) + tmp[r]
+
+def convert2(num, base):
+	q, r = divmod(num, base)
+	if q == 0:
+		return tmp[r]
+	else:
+		return convert2(q, base) + tmp[r]
 
 def func_b(s):
 	isnt = True
@@ -52,4 +72,56 @@ def func_a(a, b):
 	print('res:',b)
 	return b
 
-func_a(120, 33)
+# func_a(120, 33)
+
+s1 = 'ff'
+# print(convert(1410,16))
+
+
+
+
+def find(parent, nd):
+	if nd == parent[nd]:
+		return nd
+	parent[nd] = find(parent, parent[nd])
+	return parent[nd]
+
+def merge(parent, nd, nf):
+	nd = find(parent, nd)
+	nf = find(parent,nf)
+	if nd == nf:
+		return True
+	parent[nd] = nf
+	return False
+
+def sol(n, connection):
+	parent = [i for i in range(n+1)]
+	for i, connection in enumerate(connection):
+		if merge(parent, connection[0], connection[1]):
+			answer = i + 1
+			break
+	return answer
+	
+
+
+parent = [i for i in range(10+1)]
+# print(parent)
+
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+
+queue = deque()
+
+def bfs(n, arr2):
+	while queue:
+		x, y = queue.popleft()
+		for i in range(4):
+			nx = x + dx[i]
+			ny = y + dy[i]
+			if 0 <= nx < n and 0 <= ny < n:
+				if arr2[nx][ny] == 0:
+					arr2[nx][ny] = arr2[x][y] + 1
+					queue.append([nx, ny])
+
+
+print(math.gcd(21, 14, 7, 3))
