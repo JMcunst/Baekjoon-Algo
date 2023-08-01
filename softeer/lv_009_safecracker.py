@@ -14,5 +14,6 @@ for mw, mp in metals:
         W -= mw
     else:
         result += W * mp
+        break
 
 print(result)
