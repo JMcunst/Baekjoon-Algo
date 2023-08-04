@@ -20,11 +20,13 @@ def dfs(num, K, minX, minY, maxX, maxY, color):
     # 사실 K개의 색이 모두 있으므로 굳이 if를 표시 안해도 되지만, 꼼꼼하게 할려면 이게 맞을듯합니다.
     if color[num]:
         for nx, ny in color[num]:
-
-            NminX = min(minX, nx)
-            NmaxX = max(maxX, nx)
-            NminY = min(minY, ny)
-            NmaxY = max(maxY, ny)
+            # [[],[(-4,-2),(-5,-3)],[(5,-4),(4,-5),(3,-8)]]
+            # minx, miny, maxxm, maxy = -4, -2, -4, -2 
+            # nx = 5, ny = -4
+            NminX = min(minX, nx) # -4 5
+            NmaxX = max(maxX, nx) # -4 5
+            NminY = min(minY, ny) # -2, -4
+            NmaxY = max(maxY, ny) # -2, -4
             tx = NmaxX - NminX
             ty = NmaxY - NminY
             temp = tx * ty
