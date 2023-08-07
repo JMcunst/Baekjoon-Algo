@@ -1,5 +1,6 @@
 import heapq
 
+## 시간초과 이슈가 있을 수 있으니, import sys, sys.stdin.readline()을 적극 활용할 것
 n = int(input())
 
 leftHeap = []
@@ -15,7 +16,6 @@ for i in range(n):
         print('LEFT: ', leftHeap, ', RIGHT: ',rightHeap)
 
     if rightHeap and rightHeap[0] < -leftHeap[0]:
-        print('YES YES')
         leftValue = heapq.heappop(leftHeap)
         print('OUT LEFT: ', leftHeap, ', OUT RIGHT: ',rightHeap)
         rightValue = heapq.heappop(rightHeap)
